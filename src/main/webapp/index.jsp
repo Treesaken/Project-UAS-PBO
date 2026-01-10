@@ -7,4 +7,12 @@
 </div> 
 <jsp:include page="offer.jsp" />
 
+<jsp:include page="food.jsp" />
+
+<jsp:include page="about.jsp" />
+
+<jsp:include page="book.jsp" />
+
+<jsp:include page="client.jsp" />
+
 <jsp:include page="footer.jsp" />
