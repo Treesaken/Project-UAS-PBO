@@ -1,8 +1,8 @@
-package dao;
+package com.restoran.dao;
 
-import model.Produk;
-import model.Jenis;
-import util.KoneksiDB;
+import com.restoran.model.Produk;
+import com.restoran.model.Jenis;
+import com.restoran.util.KoneksiDB;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
