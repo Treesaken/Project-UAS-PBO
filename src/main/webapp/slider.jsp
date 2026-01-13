@@ -10,7 +10,7 @@
                       SatSet Restaurant
                     </h1>
                     <p>
-SatSet Restaurant adalah restoran cepat saji modern yang dirancang khusus untuk Anda yang memiliki mobilitas tinggi namun tetap menginginkan kualitas rasa premium. Mengusung konsep "Smart & Speedy Dining", kami memastikan setiap hidangan disajikan dalam waktu singkat tanpa kompromi pada kelezatan.</p>
+SatSet Restaurant adalah restoran cepat saji modern yang dirancang khusus untuk anda yang memiliki mobilitas tinggi namun tetap mengutamakan kualitas rasa premium. Mengusung konsep "Smart & Speedy Dining", kami memastikan setiap hidangan disajikan dalam waktu singkat tanpa kompromi pada kelezatan.</p>
                     </div>
                   </div>
                 </div>
