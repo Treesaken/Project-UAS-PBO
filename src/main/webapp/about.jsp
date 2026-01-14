@@ -33,10 +33,7 @@
               <h2>We Are Feane</h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+             Lahir di tengah hiruk-pikuk kehidupan kota yang dinamis pada tahun 2026, SatSet Resto hadir sebagai jawaban bagi mereka yang menghargai waktu. Kami memahami bahwa di dunia yang bergerak cepat, Anda tidak seharusnya mengorbankan kualitas makanan hanya karena sedang terburu-buru. Nama "SatSet" diambil dari istilah populer yang melambangkan kegesitan dan efisiensi. Itulah filosofi utama kami: Bergerak cepat, melayani dengan tepat.
             </p>
             <a href="">Read More</a>
           </div>
