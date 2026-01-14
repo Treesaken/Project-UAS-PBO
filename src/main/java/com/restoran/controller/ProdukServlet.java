@@ -1,6 +1,6 @@
-package controller;
-import dao.ProdukDAO;
-import model.Produk;
+package com.restoran.controller;
+import com.restoran.dao.ProdukDAO;
+import com.restoran.model.Produk;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;

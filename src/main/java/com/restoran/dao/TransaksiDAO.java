@@ -1,8 +1,8 @@
-package dao;
+package com.restoran.dao;
 
-import model.Transaksi;
-import model.DetailTransaksi;
-import util.KoneksiDB;
+import com.restoran.model.Transaksi;
+import com.restoran.model.DetailTransaksi;
+import com.restoran.util.KoneksiDB;
 import java.sql.*;
 import java.util.List;
 

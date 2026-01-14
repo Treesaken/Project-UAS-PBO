@@ -1,4 +1,4 @@
-package model;
+package com.restoran.model;
 import java.util.Date;
 
 public class Transaksi {

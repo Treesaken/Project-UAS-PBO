@@ -21,10 +21,21 @@
         <div class="sidebar p-3">
             <h4 class="text-white mb-4 px-2">Feane Admin</h4>
             <nav>
-                <a href="index.jsp" class="active"><i class="fas fa-home me-2"></i> Dashboard</a>
-                <a href="index.jsp?halaman=produk"><i class="fas fa-hamburger me-2"></i> Menu Makanan</a>
-                <a href="index.jsp?halaman=jenis"><i class="fas fa-list me-2"></i> Kategori</a>
-                <a href="index.jsp?halaman=laporan"><i class="fas fa-chart-line me-2"></i> Laporan</a>
+                <a href="index.jsp" class="<%= (request.getParameter("halaman") == null) ? "active" : "" %>">
+                    <i class="fas fa-home me-2"></i> Dashboard
+                </a>
+                <a href="index.jsp?halaman=produk">
+                    <i class="fas fa-hamburger me-2"></i> Menu Makanan
+                </a>
+                <a href="index.jsp?halaman=jenis">
+                    <i class="fas fa-list me-2"></i> Kategori
+                </a>
+                <a href="index.jsp?halaman=laporan">
+                    <i class="fas fa-chart-line me-2"></i> Laporan
+                </a>
+                <a href="index.jsp?halaman=users" class="<%= ("users".equals(request.getParameter("halaman"))) ? "active" : "" %>">
+                    <i class="fa fa-users me-2"></i> Data Users
+                </a>
                 <hr>
                 <a href="../logout"><i class="fas fa-sign-out-alt me-2"></i> Logout</a>
             </nav>
@@ -32,8 +43,10 @@
 
         <div class="main-content">
             <%
-                String hal = request.getParameter("halaman");
-                if (hal == null || hal.equals("dashboard")) {
+                // PERBAIKAN DI SINI: Samakan nama variabel jadi 'halaman'
+                String halaman = request.getParameter("halaman");
+                
+                if (halaman == null || halaman.equals("dashboard")) {
             %>
                 <h2>Selamat Datang, Admin!</h2>
                 <div class="row mt-4">
@@ -45,11 +58,19 @@
                     </div>
                 </div>
             <%
-                } else if (hal.equals("produk")) {
+                } else if (halaman.equals("users")) {
             %>
-                <jsp:include page="produk.jsp" />
+                <jsp:include page="users.jsp" />
             <%
-                }
+                } else if (halaman.equals("produk")) {
+            %>
+                <h3>Halaman Menu Makanan (Belum dibuat)</h3>
+            <%
+                } else {
+            %>
+                <h3>Halaman tidak ditemukan</h3>
+            <%
+                } 
             %>
         </div>
     </div>
