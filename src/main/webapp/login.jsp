@@ -137,15 +137,23 @@
         </div>
 
         <div class="form-padding">
+            
+            <% if(request.getAttribute("errorMessage") != null) { %>
+                <div class="alert alert-danger text-center py-2 mb-3" role="alert" 
+                     style="border: 2px solid var(--fast-dark); border-radius: 10px; font-size: 0.9rem;">
+                    <i class="bi bi-exclamation-triangle-fill"></i> <%= request.getAttribute("errorMessage") %>
+                </div>
+            <% } %>
+            
             <div id="login-area">
-                <form action="doLogin.jsp" method="POST">
+                <form action="LoginServlet" method="POST">
                     <div class="mb-3">
-                        <label class="form-label fw-bold">ID Pelanggan</label>
-                        <input type="text" name="user" class="form-control" placeholder="Username kamu..." required>
+                        <label class="form-label fw-bold">Username</label>
+                        <input type="text" name="username" class="form-control" placeholder="Masukkan username..." required>
                     </div>
                     <div class="mb-4">
                         <label class="form-label fw-bold">Password</label>
-                        <input type="password" name="pass" class="form-control" placeholder="******" required>
+                        <input type="password" name="password" class="form-control" placeholder="******" required>
                     </div>
                     <button type="submit" class="btn btn-fast w-100 mb-3">Mulai Pesan! <i class="bi bi-arrow-right"></i></button>
                 </form>
@@ -153,18 +161,18 @@
             </div>
 
             <div id="register-area">
-                <form action="doRegister.jsp" method="POST">
+                <form action="RegisterServlet" method="POST">
                     <div class="mb-3">
                         <label class="form-label fw-bold">Nama Lengkap</label>
-                        <input type="text" name="nama" class="form-control" placeholder="Nama kamu..." required>
+                        <input type="text" name="fullname" class="form-control" placeholder="Nama kamu..." required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label fw-bold">Email</label>
-                        <input type="email" name="email" class="form-control" placeholder="email@kamu.com" required>
+                        <label class="form-label fw-bold">Username</label>
+                        <input type="text" name="username" class="form-control" placeholder="Buat username unik..." required>
                     </div>
                     <div class="mb-4">
                         <label class="form-label fw-bold">Buat Password</label>
-                        <input type="password" name="new_pass" class="form-control" placeholder="******" required>
+                        <input type="password" name="password" class="form-control" placeholder="******" required>
                     </div>
                     <button type="submit" class="btn btn-fast w-100 mb-3" style="background-color: var(--fast-yellow); color: var(--fast-dark);">Daftar Sekarang!</button>
                 </form>
