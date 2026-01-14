@@ -1,4 +1,4 @@
-package model;
+package com.restoran.model;
 import java.io.Serializable;
 
 public class Produk implements Serializable {

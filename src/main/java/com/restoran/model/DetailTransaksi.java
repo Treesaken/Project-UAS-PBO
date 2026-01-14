@@ -1,4 +1,4 @@
-package model;
+package com.restoran.model;
 
 public class DetailTransaksi {
     private int id;
