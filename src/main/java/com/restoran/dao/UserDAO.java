@@ -46,7 +46,7 @@ public class UserDAO {
                 User u = new User();
                 u.setId(rs.getInt("id"));
                 u.setUsername(rs.getString("username"));
-                u.setPassword(rs.getString("password")); // Hati-hati menampilkan ini
+                u.setPassword(rs.getString("password")); 
                 u.setFullname(rs.getString("fullname"));
                 u.setRole(rs.getString("role"));
                 list.add(u);
