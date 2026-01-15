@@ -142,17 +142,25 @@
             </div>
         </div>
 
+        <%
+            // Simpan role user ke variabel biar gampang
+            String role = user.getRole();
+            if(role == null) role = "Kasir"; // Jaga-jaga kalau null
+        %>
+
         <div class="row g-4 justify-content-center">
-            
+
+            <% if(role.equalsIgnoreCase("Admin")) { %>
             <div class="col-md-5 col-lg-4">
                 <a href="menu_list.jsp" class="card-menu p-4 text-center">
                     <div class="icon-box text-danger">
                         <i class="bi bi-egg-fried"></i>
                     </div>
                     <h3 class="card-title-custom">KELOLA MENU</h3>
-                    <p class="mb-0 fw-bold">Tambah, Edit & Hapus Menu Makanan</p>
+                    <p class="mb-0 fw-bold">Tambah, Edit & Hapus Menu</p>
                 </a>
             </div>
+            <% } %>
 
             <div class="col-md-5 col-lg-4">
                 <a href="transaksi.jsp" class="card-menu p-4 text-center">
@@ -160,19 +168,22 @@
                         <i class="bi bi-calculator-fill"></i>
                     </div>
                     <h3 class="card-title-custom">KASIR</h3>
-                    <p class="mb-0 fw-bold">Buat Pesanan Pelanggan Baru</p>
+                    <p class="mb-0 fw-bold">Buat Pesanan Pelanggan</p>
                 </a>
             </div>
 
+            <% if(role.equalsIgnoreCase("Admin")) { %>
             <div class="col-md-5 col-lg-4">
                 <a href="laporan.jsp" class="card-menu p-4 text-center">
                     <div class="icon-box text-primary">
                         <i class="bi bi-clipboard-data-fill"></i>
                     </div>
                     <h3 class="card-title-custom">LAPORAN</h3>
-                    <p class="mb-0 fw-bold">Lihat Riwayat Penjualan Harian</p>
+                    <p class="mb-0 fw-bold">Lihat Riwayat Penjualan</p>
                 </a>
             </div>
+            <% } %>
+
         </div>
         
         <div class="text-center mt-5 text-muted fw-bold" style="font-size: 0.8rem;">
