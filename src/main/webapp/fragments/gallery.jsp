@@ -14,19 +14,19 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="neo-card">
-                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=500&q=60" class="card-img-top" height="200" style="object-fit: cover;">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=60" class="card-img-top" height="200" style="object-fit: cover;">
                     <div class="card-body text-center">
-                        <h5 class="fw-bold">Pancake Fluffy</h5>
-                        <p class="text-muted">Manis kayak janji mantan.</p>
+                        <h5 class="fw-bold">Burger Double Juicy Bomb</h5>
+                        <p class="text-muted">Daging dengan max level juicy.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="neo-card">
-                    <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=500&q=60" class="card-img-top" height="200" style="object-fit: cover;">
+                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=500&q=60" class="card-img-top" height="200" style="object-fit: cover;">
                     <div class="card-body text-center">
-                        <h5 class="fw-bold">Mie Terbang</h5>
-                        <p class="text-muted">Pedasnya nampol abis.</p>
+                        <h5 class="fw-bold">Cola Asoy</h5>
+                        <p class="text-muted">Seger Abieezz.</p>
                     </div>
                 </div>
             </div>
