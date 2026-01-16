@@ -7,10 +7,7 @@ public class User {
     private String fullname;
     private String role; 
 
-    // Constructor Kosong
     public User() {}
-
-    // --- GETTER & SETTER (Wajib Ada) ---
     
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
