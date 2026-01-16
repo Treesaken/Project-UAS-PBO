@@ -30,28 +30,28 @@
             </div>
             <div class="col-md-4">
                 <div class="neo-card p-3 bg-light">
-                    <img src="images/fotobilal.jpeg" class="rounded-circle border-2width="100" height="100 border-dark mb-3" width="100">
+                    <img src="images/fotobilal.jpeg" class="rounded-circle border-2 border-dark mb-3" width="100" height="100" style="object-fit: cover;">
                     <h5>Muhamad Bilal Fatiha</h5>
                     <p class="text-muted small">0110224182</p>  
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="neo-card p-3 bg-light">
-                    <img src="images/arga.jpeg" class="rounded-circle border-2width="100" height="100 border-dark mb-3" width="100">
+                    <img src="images/arga.jpeg" class="rounded-circle border-2 border-dark mb-3" width="100" height="100" style="object-fit: cover;">
                     <h5>Arga Octa Ramadhan</h5>
                     <p class="text-muted small">Paling Jago Hitung</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="neo-card p-3 bg-light">
-                    <img src="images/raihan.jpeg" class="rounded-circle border-2width="100" height="100 border-dark mb-3" width="100">
+                    <img src="images/raihan.jpeg" class="rounded-circle border-2 border-dark mb-3" width="100" height="100" style="object-fit: cover;">
                     <h5>Achmad Raihan</h5>
                     <p class="text-muted small">0110224132</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="neo-card p-3 bg-light">
-                    <img src="images/eko.jpeg" class="rounded-circle border-2width="100" height="100 border-dark mb-3" width="100">
+                    <img src="images/eko.jpeg" class="rounded-circle border-2 border-dark mb-3" width="100" height="100" style="object-fit: cover;">
                     <h5>Eko Budi Prasetio</h5>
                     <p class="text-muted small">0110224170</p>
                 </div>
