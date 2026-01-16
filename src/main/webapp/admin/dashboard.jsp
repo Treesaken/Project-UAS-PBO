@@ -183,6 +183,18 @@
                 </a>
             </div>
             <% } %>
+            
+            <% if(role.equalsIgnoreCase("Admin")) { %>
+                <div class="col-md-5 col-lg-4">
+                    <a href="user_list.jsp" class="card-menu p-4 text-center">
+                        <div class="icon-box text-success">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h3 class="card-title-custom">KELOLA USER</h3>
+                        <p class="mb-0 fw-bold">Tambah & Hapus Staff</p>
+                    </a>
+                </div>
+            <% } %>
 
         </div>
         

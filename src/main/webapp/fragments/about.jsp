@@ -30,9 +30,9 @@
             </div>
             <div class="col-md-4">
                 <div class="neo-card p-3 bg-light">
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle border-2 border-dark mb-3" width="100">
-                    <h5>Siti Barista</h5>
-                    <p class="text-muted small">Manajer Minuman</p>
+                    <img src="../images/fotobilal.jpeg" class="rounded-circle border-2 border-dark mb-3" width="100">
+                    <h5>Muhamad Bilal Fatiha</h5>
+                    <p class="text-muted small">0110224182</p>  
                 </div>
             </div>
             <div class="col-md-4">

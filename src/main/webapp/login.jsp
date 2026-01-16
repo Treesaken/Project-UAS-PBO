@@ -1,8 +1,3 @@
-<%-- 
-    Document   : login
-    Created on : 13 Jan 2026, 15:26:30
-    Author     : LEGION
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SatSet Resto - Fast & Delicious</title>
+    <title>Login Admin - SatSet Resto</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
@@ -68,6 +63,7 @@
             padding: 30px;
         }
 
+        /* TOMBOL LOGIN UTAMA */
         .btn-fast {
             background: var(--fast-red);
             color: white;
@@ -92,6 +88,26 @@
             box-shadow: 0px 0px 0px var(--fast-dark);
         }
 
+        /* --- TAMBAHAN: TOMBOL KEMBALI (STYLE SEKUNDER) --- */
+        .btn-back {
+            background: white;
+            color: var(--fast-dark);
+            font-weight: 700;
+            border: 3px solid var(--fast-dark);
+            border-radius: 12px;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .btn-back:hover {
+            background: #f0f0f0;
+            color: var(--fast-red);
+        }
+        /* ------------------------------------------------ */
+
         .form-control {
             border: 2px solid var(--fast-dark);
             border-radius: 10px;
@@ -101,17 +117,6 @@
         .form-control:focus {
             box-shadow: none;
             border-color: var(--fast-red);
-        }
-
-        .toggle-btn {
-            color: var(--fast-red);
-            text-decoration: underline;
-            font-weight: 700;
-            cursor: pointer;
-        }
-
-        #register-area {
-            display: none;
         }
 
         .food-icon {
@@ -155,46 +160,21 @@
                         <label class="form-label fw-bold">Password</label>
                         <input type="password" name="password" class="form-control" placeholder="******" required>
                     </div>
-                    <button type="submit" class="btn btn-fast w-100 mb-3">Mulai Pesan! <i class="bi bi-arrow-right"></i></button>
-                </form>
-                <p class="text-center small">Baru di sini? <span class="toggle-btn" onclick="toggleForm()">Buat Akun</span></p>
-            </div>
-
-            <div id="register-area">
-                <form action="RegisterServlet" method="POST">
-                    <div class="mb-3">
-                        <label class="form-label fw-bold">Nama Lengkap</label>
-                        <input type="text" name="fullname" class="form-control" placeholder="Nama kamu..." required>
+                    
+                    <button type="submit" class="btn btn-fast w-100 mb-3">
+                        Mulai Kerja! <i class="bi bi-arrow-right"></i>
+                    </button>
+                    
+                    <div class="text-center">
+                        <span class="text-muted small fw-bold">Bukan Admin?</span>
+                        <a href="index.jsp" class="btn-back mt-2">
+                            <i class="bi bi-house-door-fill"></i> KEMBALI KE BERANDA
+                        </a>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label fw-bold">Username</label>
-                        <input type="text" name="username" class="form-control" placeholder="Buat username unik..." required>
-                    </div>
-                    <div class="mb-4">
-                        <label class="form-label fw-bold">Buat Password</label>
-                        <input type="password" name="password" class="form-control" placeholder="******" required>
-                    </div>
-                    <button type="submit" class="btn btn-fast w-100 mb-3" style="background-color: var(--fast-yellow); color: var(--fast-dark);">Daftar Sekarang!</button>
-                </form>
-                <p class="text-center small">Sudah punya akun? <span class="toggle-btn" onclick="toggleForm()">Login Saja</span></p>
+                    </form>
             </div>
         </div>
     </div>
-
-    <script>
-        function toggleForm() {
-            const login = document.getElementById('login-area');
-            const register = document.getElementById('register-area');
-            
-            if (login.style.display === "none") {
-                login.style.display = "block";
-                register.style.display = "none";
-            } else {
-                login.style.display = "none";
-                register.style.display = "block";
-            }
-        }
-    </script>
 
 </body>
 </html>
