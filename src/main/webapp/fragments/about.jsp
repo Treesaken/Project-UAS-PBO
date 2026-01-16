@@ -39,7 +39,7 @@
                 <div class="neo-card p-3 bg-light">
                     <img src="images/arga.jpeg" class="rounded-circle border-2 border-dark mb-3" width="100" height="100" style="object-fit: cover;">
                     <h5>Arga Octa Ramadhan</h5>
-                    <p class="text-muted small">Paling Jago Hitung</p>
+                    <p class="text-muted small">0110224165</p>
                 </div>
             </div>
             <div class="col-md-4">
